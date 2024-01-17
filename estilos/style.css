@@ -1,15 +1,40 @@
 @charset "UTF-8";
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
-html {
-    height: 500vh;
+body {
+    background-image: linear-gradient(to right top, #a3cef1, #89b7e8, #75a0de, #6888d3, #626fc4, #5f62c0, #5d55bb, #5e47b5, #5a43bd, #563ec4, #503acc, #4a35d4);
+    height: 100vh;
 }
 
 header {
-    max-width: 1280px;
-    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+
+header > h1 > a {
+    padding: 10px;
+}
+
+header > nav {
+    padding: 10px;
+}
+
+header > nav > ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header > nav > ul > li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+header > section > button {
+    padding: 10px;
 }
