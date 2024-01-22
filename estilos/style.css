@@ -1,24 +1,57 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "Geakosa";
+    src: url(../fontes/Geakosa\ Oblique\ Outline.otf);
+}
+
+@font-face {
+    font-family: "Autography";
+    src: url(../fontes/Autography.otf);
+}
+
+:root {
+    --cor1: #231942;
+    --cor2: #8338ec;
+
+    --fonte-titulo1: "Geakosa", serif;
+    --fonte-titulo2: "Autography", serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 body {
-    background-image: linear-gradient(to right top, #a3cef1, #89b7e8, #75a0de, #6888d3, #626fc4, #5f62c0, #5d55bb, #5e47b5, #5a43bd, #563ec4, #503acc, #4a35d4);
     height: 100vh;
 }
 
 header {
     display: flex;
+    background-color: var(--cor1);
+    background-image: linear-gradient(to bottom, #10002b, #5a189a);
     justify-content: space-around;
     align-items: center;
     width: 100vw;
 }
 
+header > h1#logo { /* Pedro */
+    margin-top: 10px;
+    font-size: 2.4em;
+    font-family: var(--fonte-titulo1);
+}
+
+div#logo2 { /* Castro */
+    display: inline;
+    color: var(--cor2);
+    font-family: var(--fonte-titulo2);
+}
+
 header > h1 > a {
     padding: 10px;
+    text-decoration: none;
+    color: #fff;
 }
 
 header > nav {
@@ -32,9 +65,38 @@ header > nav > ul {
 
 header > nav > ul > li {
     list-style-type: none;
-    padding: 10px;
+    padding: 10px 20px;
+}
+
+header > nav > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+header > nav > ul > li > a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
+span.material-symbols-outlined {
+    font-size: 1em;
 }
 
 header > section > button {
     padding: 10px;
+}
+
+header > section > input[type=button] {
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: #8338ec;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+header > section > input[type=button]:hover {
+    cursor: pointer;
+    color: var(--cor1);
+    background-color: #945ae6;
 }
