@@ -1,21 +1,13 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "Geakosa";
-    src: url(../fontes/Geakosa\ Oblique\ Outline.otf);
+    font-family: "Chunk";
+    src: url(../fontes/ChunkFive-Regular.otf);
 }
 
 @font-face {
-    font-family: "Autography";
-    src: url(../fontes/Autography.otf);
-}
-
-:root {
-    --cor1: #231942;
-    --cor2: #8338ec;
-
-    --fonte-titulo1: "Geakosa", serif;
-    --fonte-titulo2: "Autography", serif;
+    font-family: "Yatra";
+    src: url(../fontes/YatraOne-Regular.ttf);
 }
 
 * {
@@ -24,79 +16,34 @@
 }
 
 body {
-    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     display: flex;
-    background-color: var(--cor1);
-    background-image: linear-gradient(to bottom, #10002b, #5a189a);
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
+    justify-content: space-between;
+    background-color: #521fca;
 }
 
-header > h1#logo { /* Pedro */
-    margin-top: 10px;
-    font-size: 2.4em;
-    font-family: var(--fonte-titulo1);
-}
-
-div#logo2 { /* Castro */
-    display: inline;
-    color: var(--cor2);
-    font-family: var(--fonte-titulo2);
+header > h1 {
+    font-size: 2em;
+    padding: 15px;
+    font-family: "Chunk";
 }
 
 header > h1 > a {
-    padding: 10px;
+    color: #ffaa00;
     text-decoration: none;
-    color: #fff;
-}
-
-header > nav {
-    padding: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
 }
 
 header > nav > ul {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-header > nav > ul > li {
+    padding: 15px;
     list-style-type: none;
-    padding: 10px 20px;
 }
 
 header > nav > ul > li > a {
-    color: #fff;
+    font-family: "Yatra";
+    color: #ffaa00;
     text-decoration: none;
-    font-size: 1.3em;
-}
-
-header > nav > ul > li > a:hover {
-    text-decoration: underline;
-    color: var(--cor2);
-}
-
-span.material-symbols-outlined {
-    font-size: 1em;
-}
-
-header > section > button {
-    padding: 10px;
-}
-
-header > section > input[type=button] {
-    padding: 8px 20px;
-    border-radius: 10px;
-    background-color: #8338ec;
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-header > section > input[type=button]:hover {
-    cursor: pointer;
-    color: var(--cor1);
-    background-color: #945ae6;
 }
