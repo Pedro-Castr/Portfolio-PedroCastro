@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "Chunk";
-    src: url(../fontes/ChunkFive-Regular.otf);
+    font-family: "PoppinsT";
+    src: url(../fontes/Poppins-ExtraBold.ttf);
 }
 
 @font-face {
-    font-family: "Yatra";
-    src: url(../fontes/YatraOne-Regular.ttf);
+    font-family: "Poppins";
+    src: url(../fontes/Poppins-Regular.ttf);
 }
 
 * {
@@ -21,20 +21,23 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
-    background-color: #521fca;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #711fce, #9a46fa);
 }
 
 header > h1 {
-    font-size: 2em;
+    font-size: 2.2em;
     padding: 15px;
-    font-family: "Chunk";
+    font-family: "PoppinsT";
+    font-style: italic;
 }
 
 header > h1 > a {
-    color: #ffaa00;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #000000;
+    color: #ffae00;
     text-decoration: none;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
 }
 
 header > nav > ul {
@@ -42,8 +45,37 @@ header > nav > ul {
     list-style-type: none;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav > span {
+    color: #ffae00;
+    padding: 10px 15px;
+}
+
+nav > span:hover {
+    cursor: pointer;
+}
+
+nav > ul > li {
+    padding: 5px;
+    text-align: start;
+}
+
+nav > ul > li:hover {
+    text-decoration: underline;
+    color: #ffae00;
+}
+
+ul#menu {
+    display: none;
+}
+
 header > nav > ul > li > a {
-    font-family: "Yatra";
-    color: #ffaa00;
+    font-family: "Poppins";
+    color: #ffae00;
     text-decoration: none;
 }

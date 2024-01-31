@@ -1,4 +1,8 @@
-function clickMenu() {
+function clickMenuHamburguer() {
     var nav = document.getElementById("menu")
-    nav.style.display = "none"
+    if (nav.style.display == "block") {
+        nav.style.display = "none"
+    } else {
+        nav.style.display = "block"
+    }
 }

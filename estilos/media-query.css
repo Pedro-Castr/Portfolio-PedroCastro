@@ -1,10 +1,35 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav > span.material-symbols-outlined {
+        display: none;
+    }
+
+    nav > ul#menu {
+        display: flex;
+    }
 
 }
 
 @media screen and (min-width: 992px) { /* Desktop */
-    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav > span.material-symbols-outlined {
+        display: none;
+    }
+
+    nav > ul#menu {
+        display: flex;
+    }
 }
 
