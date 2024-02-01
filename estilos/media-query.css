@@ -13,6 +13,16 @@
 
     nav > ul#menu {
         display: flex;
+        flex-direction: row;
+    }
+
+    article#imagem-topo {
+        background-image: url(../imagens/Fundo-topo-G.jpg);
+        height: 400px;
+    }
+
+    nav > ul > li {
+        padding: 10px;
     }
 
 }
@@ -30,6 +40,16 @@
 
     nav > ul#menu {
         display: flex;
+        flex-direction: row;
+    }
+
+    article#imagem-topo {
+        background-image: url(../imagens/Fundo-topo-G.jpg);
+        height: 400px;
+    }
+
+    nav > ul > li {
+        padding: 10px;
     }
 }
 

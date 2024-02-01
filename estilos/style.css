@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+/* Atribuições
+Imagem topo: Image by <a href="https://www.freepik.com/free-vector/flat-abstract-wireframe-background_15517732.htm#page=2&query=cyber%20shapes&position=29&from_view=search&track=ais&uuid=2d12ff30-f095-461d-bb22-df4d9e2e5545">Freepik</a> 
+*/
+
 @font-face {
     font-family: "PoppinsT";
     src: url(../fontes/Poppins-ExtraBold.ttf);
@@ -23,7 +27,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(to bottom, #711fce, #9a46fa);
+    background-image: linear-gradient(to bottom, #221f1f, #000000);
 }
 
 header > h1 {
@@ -34,9 +38,7 @@ header > h1 {
 }
 
 header > h1 > a {
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #000000;
-    color: #ffae00;
+    color: #fefae0;
     text-decoration: none;
 }
 
@@ -52,7 +54,7 @@ nav {
 }
 
 nav > span {
-    color: #ffae00;
+    color: #fefae0;
     padding: 10px 15px;
 }
 
@@ -61,13 +63,12 @@ nav > span:hover {
 }
 
 nav > ul > li {
-    padding: 5px;
     text-align: start;
 }
 
 nav > ul > li:hover {
     text-decoration: underline;
-    color: #ffae00;
+    color: #fefae0;
 }
 
 ul#menu {
@@ -76,6 +77,25 @@ ul#menu {
 
 header > nav > ul > li > a {
     font-family: "Poppins";
-    color: #ffae00;
+    color: #fefae0;
     text-decoration: none;
+}
+
+article#imagem-topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagens/Fundo-topo-P.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 350px;
+}
+
+article#imagem-topo > h2 {
+    text-align: center;
+    padding: 30px;
+    color: #fefae0;
+    font-size: 2em;
 }
