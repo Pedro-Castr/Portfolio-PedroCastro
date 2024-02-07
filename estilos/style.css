@@ -2,6 +2,8 @@
 
 /* Atribuições
 Imagem topo: Image by <a href="https://www.freepik.com/free-vector/flat-abstract-wireframe-background_15517732.htm#page=2&query=cyber%20shapes&position=29&from_view=search&track=ais&uuid=2d12ff30-f095-461d-bb22-df4d9e2e5545">Freepik</a> 
+
+Imagem Background: Image by <a href="https://www.freepik.com/free-vector/gradient-hexagonal-background_13684529.htm#query=white%20tech%20background&position=1&from_view=search&track=ais&uuid=fbc2d6e3-a092-45da-9709-7fe142318d58">Freepik</a>
 */
 
 @font-face {
@@ -14,6 +16,11 @@ Imagem topo: Image by <a href="https://www.freepik.com/free-vector/flat-abstract
     src: url(../fontes/Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Permanent Maker";
+    src: url(../fontes/PermanentMarker-Regular.ttf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -21,6 +28,9 @@ Imagem topo: Image by <a href="https://www.freepik.com/free-vector/flat-abstract
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../imagens/background.jpg);
+    background-size: cover;
+    width: 100vw;
 }
 
 header {
@@ -32,7 +42,7 @@ header {
 
 header > h1 {
     font-size: 2.2em;
-    padding: 15px;
+    margin: 15px;
     font-family: "PoppinsT";
     font-style: italic;
 }
@@ -40,6 +50,10 @@ header > h1 {
 header > h1 > a {
     color: #fefae0;
     text-decoration: none;
+}
+
+header > h1 > a > img {
+    width: 26x;
 }
 
 header > nav > ul {
@@ -90,12 +104,19 @@ article#imagem-topo {
     background-position: center center;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 350px;
+    height: 400px;
 }
 
 article#imagem-topo > h2 {
     text-align: center;
+    font-family: "Permanent Maker";
     padding: 30px;
+    font-weight: lighter;
     color: #fefae0;
     font-size: 2em;
+}
+
+main {
+    width: 100vw;
+    background-color: #fffafa;
 }

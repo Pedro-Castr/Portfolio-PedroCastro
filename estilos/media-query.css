@@ -25,6 +25,12 @@
         padding: 10px;
     }
 
+    main {
+        width: 80vw;
+        margin: auto;
+        box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+    }
+
 }
 
 @media screen and (min-width: 992px) { /* Desktop */
@@ -51,5 +57,11 @@
     nav > ul > li {
         padding: 10px;
     }
+
+    main {
+        width: 80vw;
+        margin: auto;
+    }
+
 }
 
