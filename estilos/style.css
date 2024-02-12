@@ -1,9 +1,7 @@
 @charset "UTF-8";
 
 /* Atribuições
-Imagem topo: Image by <a href="https://www.freepik.com/free-vector/flat-abstract-wireframe-background_15517732.htm#page=2&query=cyber%20shapes&position=29&from_view=search&track=ais&uuid=2d12ff30-f095-461d-bb22-df4d9e2e5545">Freepik</a> 
-
-Imagem Background: Image by <a href="https://www.freepik.com/free-vector/gradient-hexagonal-background_13684529.htm#query=white%20tech%20background&position=1&from_view=search&track=ais&uuid=fbc2d6e3-a092-45da-9709-7fe142318d58">Freepik</a>
+Imagem topo: Image by <a href="https://www.freepik.com/free-vector/blue-background-with-halftone-diagonal-lines_12572923.htm?query=blue%20background#from_view=detail_alsolike">Image by starline</a> on Freepik 
 */
 
 @font-face {
@@ -28,8 +26,7 @@ Imagem Background: Image by <a href="https://www.freepik.com/free-vector/gradien
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../imagens/background.jpg);
-    background-size: cover;
+    background-color: #b4e5fc;
     width: 100vw;
 }
 
@@ -37,12 +34,12 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(to bottom, #221f1f, #000000);
+    background-image: linear-gradient(to bottom, #001ee0, #025ac7);
 }
 
 header > h1 {
     font-size: 2.2em;
-    margin: 15px;
+    margin: 10px 15px;
     font-family: "PoppinsT";
     font-style: italic;
 }
@@ -52,12 +49,9 @@ header > h1 > a {
     text-decoration: none;
 }
 
-header > h1 > a > img {
-    width: 26x;
-}
-
 header > nav > ul {
-    padding: 15px;
+    display: flex;
+    padding: 10px 30px;
     list-style-type: none;
 }
 
@@ -77,16 +71,12 @@ nav > span:hover {
 }
 
 nav > ul > li {
-    text-align: start;
+    padding: 0px 10px;
 }
 
 nav > ul > li:hover {
     text-decoration: underline;
     color: #fefae0;
-}
-
-ul#menu {
-    display: none;
 }
 
 header > nav > ul > li > a {
@@ -99,10 +89,9 @@ article#imagem-topo {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../imagens/Fundo-topo-P.jpg);
+    background-image: url(../imagens/fundo.jpg);
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
     width: 100vw;
     height: 400px;
 }
@@ -110,13 +99,17 @@ article#imagem-topo {
 article#imagem-topo > h2 {
     text-align: center;
     font-family: "Permanent Maker";
-    padding: 30px;
+    margin-bottom: 50px;
     font-weight: lighter;
     color: #fefae0;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 main {
     width: 100vw;
     background-color: #fffafa;
+}
+
+main > article > p {
+    padding: 10px;
 }
