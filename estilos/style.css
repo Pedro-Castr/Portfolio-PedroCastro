@@ -27,6 +27,7 @@ Imagem topo: Image by <a href="https://www.freepik.com/free-vector/blue-backgrou
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #b4e5fc;
+    overflow-x: hidden;
     width: 100vw;
 }
 
@@ -110,6 +111,35 @@ main {
     background-color: #fffafa;
 }
 
+main > article > h2 {
+    padding: 8px 15px;
+    color: #001219;
+}
+
 main > article > p {
-    padding: 10px;
+    text-align: justify;
+    padding: 8px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #025ac7, #001ee0);
+}
+
+footer > p {
+    color: #fefae0;
+    padding: 5px;
+}
+
+footer > ul {
+    display: flex;
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+footer > ul > li > a {
+    padding: 0px 10px;
+    color: #fefae0;
 }
