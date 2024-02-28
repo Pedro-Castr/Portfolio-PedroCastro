@@ -22,6 +22,26 @@
     header > h1 > a {
         padding: 5px 15px;
     }
+
+    article > section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        padding: 10px;
+    }
+
+    article > section#segundo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    section > section {
+        width: 50vw;
+    }
 }
 
 @media screen and (min-width: 992px) { /* Desktop */
@@ -46,6 +66,26 @@
 
     header > h1 > a {
         padding: 5px 15px;
+    }
+
+    article > section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    article > section#segundo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        padding: 10px;
+    }
+
+    section > section {
+        width: 50vw;
     }
 }
 

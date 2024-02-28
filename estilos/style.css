@@ -146,6 +146,47 @@ main > article > p {
     padding: 5px 15px;
 }
 
+article > section {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 10px;
+}
+
+article > section > div#imagem1 {
+    background-image: url(../imagens/perfil1.jpeg);
+    background-size: cover;
+    background-position: center center;
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    border: 2px solid #001ee0;
+}
+
+article > section > div#imagem2 {
+    background-image: url(../imagens/perfil2.JPG);
+    background-size: cover;
+    background-position: center center;
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    border: 2px solid #001ee0;
+}
+
+article > section > section {
+    padding: 10px;
+    text-align: center;
+}
+
+article > section > section > h2 {
+    color: #001219;
+}
+
+article > section > section > p {
+    padding: 0px 15px;
+    text-align: justify;
+}
+
 img {
     max-width: 100%;
     display: block;
